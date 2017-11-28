@@ -8,7 +8,26 @@
 #include <iostream>
 using namespace std;
 
+int sum(int num);
+
 int main()
 {
-  cout << "Hello world!" << endl;
+  int n;
+  
+  cout << "Enter a number: " << endl;
+  cin >> n;
+  cout << sum(n) << endl;
+
+  return 0;
+}
+
+int sum(int num)
+{
+  int total = 0;
+
+  for (int i = 1; i <= num; ++i) {
+    total += i;
+  }
+
+  return total;
 }
