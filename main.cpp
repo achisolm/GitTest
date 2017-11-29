@@ -9,6 +9,7 @@
 using namespace std;
 
 int sum(int num);
+int product(int num);
 
 int main()
 {
@@ -17,6 +18,7 @@ int main()
   cout << "Enter a number: " << endl;
   cin >> n;
   cout << sum(n) << endl;
+  cout << product(n) << endl;
 
   return 0;
 }
@@ -27,6 +29,17 @@ int sum(int num)
 
   for (int i = 1; i <= num; ++i) {
     total += i;
+  }
+
+  return total;
+}
+
+int product(int num)
+{
+  int total = 1;
+
+  for (int i = 1; i <= num; ++i) {
+    total *= i;
   }
 
   return total;
